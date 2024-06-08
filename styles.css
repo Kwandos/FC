@@ -1,0 +1,29 @@
+/* Algemene body stijlen */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Verander de achtergrondkleur naar wens */
+    text-align: center; /* Centreert tekst en inhoud */
+}
+
+/* Header stijlen */
+.header {
+    margin-top: 50px;
+}
+
+/* Logo stijlen */
+.logo {
+    width: 150px; /* Grootte van het logo */
+    height: 150px; /* Zorgt dat het logo rond wordt */
+    border-radius: 50%; /* Maakt de hoeken rond */
+    object-fit: cover; /* Zorgt dat de afbeelding het element volledig vult zonder de verhoudingen te verstoren */
+    border: 5px solid #fff; /* Voegt een witte rand toe */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Voegt een schaduw toe voor een zwevend effect */
+}
+
+/* Stijlen voor de guild naam */
+h1 {
+    color: #333; /* Kleur van de tekst */
+    font-size: 24px; /* Grootte van de tekst */
+}
