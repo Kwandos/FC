@@ -1,29 +1,52 @@
 /* Algemene body stijlen */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Verander de achtergrondkleur naar wens */
-    text-align: center; /* Centreert tekst en inhoud */
+    margin: 0;                      /* Verwijdert de standaardmarge rond de body, zodat de inhoud de hele pagina kan gebruiken. */
+    padding: 0;                     /* Verwijdert de standaardpadding rond de body. */
+    font-family: 'Merriweather', serif; /* Stelt het lettertype in op Merriweather, met een fallback naar elke beschikbare serif font. */
+    background-image: url('images/background.png'); /* Stelt de nieuwe achtergrondafbeelding in */
+    background-size: cover; /* Zorgt dat de achtergrond de gehele beschikbare ruimte bedekt */
+    background-position: center; /* Centreert de achtergrondafbeelding in de viewport */
+    height: 100vh;                  /* Zet de hoogte van de body op 100% van de viewport hoogte. Dit zorgt ervoor dat de body de volledige hoogte van het scherm inneemt. */
+    display: flex;                  /* Zet de display property op flex om flexbox layout mogelijkheden te gebruiken, wat helpt bij het centreren van de inhoud. */
+    justify-content: center;        /* Centreert de flex-items horizontaal binnen de flex-container (de body). */
+    align-items: center;            /* Centreert de flex-items verticaal binnen de flex-container. */
+    background-color: #f4f4f4;      /* Stelt een lichte grijze achtergrondkleur in voor de body. */
+    text-align: center;             /* Centreert de tekst binnen de body horizontaal. */
 }
 
-/* Header stijlen */
-.header {
-    margin-top: 50px;
+/* Stijlen voor de inhoud container */
+.content {
+    display: flex;                  /* Gebruikt flexbox voor de layout van de .content div */
+    flex-direction: column;         /* Stapelt de flex-items (logo en h1) verticaal */
+    align-items: center;            /* Centreert de flex-items horizontaal in de .content div */
+    width: 100%;                    /* Zorgt dat de .content div de volle breedte van de body gebruikt */
 }
 
 /* Logo stijlen */
+/* Logo stijlen */
 .logo {
-    width: 150px; /* Grootte van het logo */
-    height: 150px; /* Zorgt dat het logo rond wordt */
-    border-radius: 50%; /* Maakt de hoeken rond */
-    object-fit: cover; /* Zorgt dat de afbeelding het element volledig vult zonder de verhoudingen te verstoren */
-    border: 5px solid #fff; /* Voegt een witte rand toe */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Voegt een schaduw toe voor een zwevend effect */
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease; /* Voegt een soepele overgangseffect toe */
 }
+
+.logo:hover {
+    transform: scale(1.1); /* Vergroot het logo met 10% wanneer eroverheen gehoverd wordt */
+}
+
 
 /* Stijlen voor de guild naam */
 h1 {
-    color: #333; /* Kleur van de tekst */
-    font-size: 24px; /* Grootte van de tekst */
+    color: #fff;                    /* Witte tekst */
+    font-size: 32px;                /* Maakt de tekst groter voor betere leesbaarheid */
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;           /* Voegt een zwarte schaduw rond de tekst toe */
 }
